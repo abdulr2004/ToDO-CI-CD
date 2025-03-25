@@ -1,30 +1,30 @@
-# Getting Started with Create React App
+# ToDo App with CI/CD Pipeline
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple ToDo app built with React and integrated with a CI/CD pipeline using GitHub Actions. The app is automatically deployed to GitHub Pages whenever changes are pushed to the `main` branch.
 
-## Available Scripts
+## CI/CD Workflow
 
-In the project directory, you can run:
+The CI/CD pipeline automates the build and deployment process to GitHub Pages whenever changes are pushed to the `main` branch.
 
-### `npm start`
+### Workflow Steps
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### Build and Deploy
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Whenever there is a push to the `main` branch, the workflow triggers a build job and deploys the app:
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+- Node.js and npm should be installed.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Live
+Access the live ToDo app [here](https://abdulr2004.github.io/ToDO-CI-CD)/).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   git clone https://github.com/abdulr2004/ToDO-CI-CD.git
+   cd todoapp
+   npm install
+   npm start
