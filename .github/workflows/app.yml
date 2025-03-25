@@ -31,8 +31,8 @@ jobs:
       - name: Upload artifact to enable deployment
         uses: actions/upload-artifact@v4
         with:
-          name: poduction file
-          path: ./todo/build
+          name: production file
+          path: ./todoapp/build
 
   # Deploy Job
   deploy:
@@ -44,11 +44,11 @@ jobs:
       - name: Download artifact
         uses: actions/download-artifact@v3
         with:
-          name: poduction file
-          path: ./todo/build
+          name: production file
+          path: ./todoapp/build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.KEY }} #this is the key of the access token
-          publish_dir: ./todo/build
+          publish_dir: ./todoapp/build

@@ -6,7 +6,7 @@ import './TodoList.css';
 function TodoList() {
   const [todos, setTodos] = useState([]);
   return (
-    <div className="todo-list-cintainer">
+    <div className="todo-list-container">
       <h1>My Todosssss</h1>
       <TodoInput todos={todos} setTodos={setTodos} />
       <div className="todo-items-wrapper">
